@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conductor InterFace</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div>
+        <div class="flex justify-evenly">
+            <img src="Images/tnstc_header01.jpg">
+            <h1 class="flex justify-center text-6xl mt-5"><b>KNOW YOUR BUS</b></h1>
+            <img src="Images/tnstc_header03.jpg">
+        </div>
+        <h1 class="flex justify-center text-5xl mt-5 text-blue-800"><b>Conductor</b></h1>
+        <div class="ml-96 mt-28">
+            <form method="post" action="conductor.php">
+            <div>
+            <label class="text-2xl font-semibold ">Enter The Bus No:</label>
+            <input type='text' name="bus_no" class=" ml-24 border-gray-600 h-8 rounded-md border-2"></input>
+            </div>
+            <div class="mt-8">
+            <label class="text-2xl  font-semibold ">Starting Point(From):</label>
+            <input type='text' name="starting_point" class=" ml-16 border-gray-600 h-8 rounded-md border-2"></input>
+            </div>
+            <div class="mt-8">
+            <label class="text-2xl font-semibold ">Destination(To):</label>
+            <input type='text' name="destination" class=" ml-28 translate-x-2 border-gray-600 h-8 rounded-md border-2"></input>
+            </div>
+            <div class="mt-8">
+                <label class="text-2xl font-semibold ">Delay:</label>
+                <input type='text' name="delay" class=" ml-56 translate-x-2 border-gray-600 h-8 rounded-md border-2"></input>
+            </div>
+            <div class="flex">
+            <div class="ml-0">
+                <button  class="bg-gray-800 p-3 text-white rounded-md font-mono mt-20"><a href="know_your_bus.html">Back</a></button>
+            </div>
+           <div class="ml-24">
+            <button type="submit" class="bg-violet-800 p-3 text-white rounded-md font-mono ml-96 mt-20">Submit</button>
+        </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

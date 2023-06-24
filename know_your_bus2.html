@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know Your Bus</title>
+   
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          screens: {
+            sm:'441xl',
+          },
+        }
+      }
+    }
+  </script>
+  <script>
+    function Index()
+  {
+      console.log("Clicked")
+      const burger=document.querySelector("#burger");
+      const menu=document.querySelector("#menu");
+          if(menu.classList.contains("hidden"))
+          {
+              menu.classList.remove("hidden")
+          }
+          else{
+              menu.classList.add("hidden")
+          }
+      }
+  </script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+    <div class="flex flex-row ml-12 justify-between bg-white">
+        <div class="flex">
+        <img class="w-12 ml-8 h-12 mt-2 mb-1 hover:translate-x-12 rounded-full border-4 border-solid border-black" src="Images/knb.jpg">
+        <img class="h-12 w-40 mt-3 ml-5 " src="Images/download.png">
+      </div>
+        <ul class="px-5 flex mt-2 mr-10">
+          <li class="px-5 text-2xl font-semibold text-red-700"><a href="know_your_bus.html">Home</a></li>
+          <li class="px-5 text-2xl font-semibold text-red-700"><a href="#">About</a></li>
+          <li class="px-5 text-2xl font-semibold text-red-700"><a href="#">Contact</a></li>
+          <li class="px-5 text-2xl font-semibold text-red-700"><a href="#">Services</a></li>
+        </ul>
+    </div>
+   <div class="flex mt-5">
+    <div class="flex justify-center p-3">
+        <img src="Images/buses.jpg" class="h-6/5 ml-8">
+      </div> 
+        <div class="mt-40 ml-32 flex">
+        <div class=" bg-slate-200 pt-6 p-8 flex mb-40 rounded-lg justify-center hover:border-gray-800 hover:scale-1 border-4 ">
+            <li class="list-none"><a href="conductor.html"><img class="w-40 h-40" src="Images/conductor.jpg"><h3 class="font-bold text-2xl mt-2 ml-5">Conductor</h3></a></li>
+        </div>
+        <div class="ml-20 bg-slate-200 p-8 pt-6 mb-40 flex rounded-lg justify-center rounded-4 hover:border-gray-800 hover:border-4 hover:scale-1">    
+            <li class="list-none"><a href="saran.html"><img class="w-40 h-40" src="Images\user.jpeg.jpg"><h3 class="font-bold text-2xl mt-2 ml-12">User</h3></a></li>
+        </div>
+    </div> 
+  </div>
+    </div>
+  <div class="bg-black flex justify-between mt-8">
+    <div class="flex ml-4 pb-0 mt-3">
+      <img class="w-12 h-8 pr-4" src="Images/copyright-logo.png">
+      <p class="text-white text-1xl">2023 Copyrights Reserved</p>
+    </div>
+    <ul class="flex pb-0 mt-1">
+      <li class="mr-5 w-8 h-8"><img src="Images/twitter-logo.png"></li>
+      <li class="mr-5 w-8 h-8"><img src="Images/insta-logo.png"></li>
+      <li class="mr-10 w-12 h-12"><img src="Images/yt-logo.png"></li>
+    </ul>
+  </div>
+</body>
+</html>
